@@ -1,0 +1,303 @@
+/*****************
+  RESET
+*****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  background: #fff;
+  margin: 10% auto;
+}
+
+.title {
+  text-align: center;
+  margin: 30px 0 10px 0;
+  padding: 0 10px;
+}
+
+.title h1 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+.title p {
+    font-size: 0.875em;
+    color: #acacac;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.content {
+  justify-content: space-around;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  padding: 30px;
+}
+.sidebar h3{
+  font-size: 1.3em;
+  color: #5b5b5b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.sidebar .block {
+  padding: 5px 0;
+  border-bottom: 1px solid #acacac;
+  color: #acacac;
+  text-align: center;
+}
+
+.sidebar .block:nth-child(5){
+    margin-bottom: 10%;
+}
+/* 
+  SEARCH
+*/
+.blocoIcones{
+  float:left; 
+  width: 100%; 
+  height: 40px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+}
+.blocoIcones input{
+  float:left; 
+  width: 80%; 
+  height: 100%; 
+  border:none; 
+  border-radius: 5px; 
+  padding: 0 5px;}
+  
+.blocoIcones button{
+  float:left;
+  width: 20%; 
+  height: 100%;      
+  border:none; 
+  background-color: white;
+  border-radius: 0 5px 5px 0; 
+  cursor: pointer;
+}
+
+/* 
+  Cadastro novo
+*/
+
+.cadastroNovo{
+   
+  width: 100%; 
+  height: 40px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  margin-top: 20px;
+}  
+.cadastroNovo a{
+   
+  border:none; 
+  background-color: white;
+  border-radius: 0 5px 5px 0; 
+  cursor: pointer;
+}
+
+/***************** 
+    CARD
+*****************/
+
+.card{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    margin-bottom: 30px;
+}
+.card img{
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+    border-radius: 5px 5px 0 0 ;
+}
+.card-body{
+    padding: 10px 10px;
+}
+
+.card-body h3 {
+    font-size: 1.3em;
+    color: #5b5b5b;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.card-body p{
+    font-size: 1em;
+    color: #acacac;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.card-body a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: #1aa5ce;
+}
+/*****************
+  Search
+*****************/
+.search {
+
+    border: 1px solid;
+    border-radius: 15px;
+    
+}
+.searchPlace{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+}
+
+/*****************
+  Media queries
+*****************/
+@media (min-width: 480px) {
+  .container {
+    width: 80%;
+  }
+  .title {
+    padding: 0;
+  }
+  .title h1 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  .title p {
+    font-size: 0.875em;
+    color: #acacac;
+  }
+}
+@media (min-width: 767px) {
+  .container {
+    width: 80%;
+  }
+  .title {
+    text-align: center;
+    margin: 30px 0 50px 0;
+  }
+  
+  .title h1 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+  }
+  .title p {
+      font-size: 1em;
+      color: #acacac;
+  }
+  .content {
+    justify-content: space-between;
+    padding: 30px;
+  }
+  .card{
+    width: 45%;  
+  }
+  .card-body h3 {
+    font-size: 1em;
+    text-align: start;  
+  }
+
+  .card-body p{
+    font-size: 0.875em;
+    text-align: start;
+  }
+
+  .card-body a{
+    text-decoration: none;
+    font-size: 1em;
+  }
+  .sidebar h3 {
+    font-size: 1.5em;
+  }
+  .sidebar .block {
+    font-size: 1.2em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sidebar .block:nth-child(5){
+    margin-bottom: 5%;
+  }
+  .blocoIcones {
+    width: 50%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 979px) {
+  .container {
+    width: 85%
+  }
+  .title h1 {
+    font-size: 1.5em;
+  }
+  .content-box{
+    flex-direction: row;
+  }
+  .content {
+    width: 50%;
+    display: block;
+  }
+  .card{
+    width: 100%;  
+  }
+  .card-body h3 {
+    font-size: 1em;
+    text-align: start;  
+  }
+  .sidebar .block {
+    width: 100%;
+  }
+  .blocoIcones {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+.container {
+    margin: 5% auto;
+    width: 90%
+  }
+  .content {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .card{
+    width: 40%;
+    margin: 0 20px 20px 20px;  
+  }
+  .sidebar {
+    width: 30%;
+  }
+  .sidebar .block {
+    text-align: start;
+    font-size: 0.875em;
+  }
+  .sidebar h3 {
+    text-align: start;
+    font-size: 1em;
+  }
+}
