@@ -1,0 +1,103 @@
+.content {
+    justify-content: space-around;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+/***************** 
+      CARD
+  *****************/
+  
+.card{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    margin-bottom: 30px;
+}
+.card img{
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+    border-radius: 5px 5px 0 0 ;
+}
+.card-body{
+    padding: 10px 10px;
+}
+
+.card-body h3 {
+    font-size: 1.3em;
+    color: #5b5b5b;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.card-body p{
+    font-size: 1em;
+    color: #acacac;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.card-body a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: #1aa5ce;
+}
+
+ /*****************
+    Media queries
+  *****************/
+
+  @media (min-width: 767px) {
+    .content {
+        justify-content: space-between;
+        padding: 30px;
+      }  
+    .card{
+        width: 45%;  
+      }
+      .card-body h3 {
+        font-size: 1em;
+        text-align: start;  
+      }
+    
+      .card-body p{
+        font-size: 0.875em;
+        text-align: start;
+      }
+    
+      .card-body a{
+        text-decoration: none;
+        font-size: 1em;
+      }
+  }
+
+  @media (min-width: 979px){
+    .content {
+        padding: 30px 100px;
+        display: block;
+      }
+    .card{
+        width: 100%;  
+      }
+    .card-body h3 {
+    font-size: 1em;
+    text-align: start;  
+    }
+  }
+  @media (min-width: 1200px){
+    .content {
+        width: 100%;
+        display: flex;
+        padding: 30px;
+        justify-content: space-around;
+      }    
+    .card{
+        width: 40%;
+        margin: 0 20px 20px 20px;  
+      }
+  }
